@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.light {
+  --bg: #EDEEF0;
+  --fg: #18191B;
+  --border: .5px solid #18191B;
+  --gray: #e5e5e5;
+}
+
+.dark {
+  --bg: #18191B;
+  --fg: #EDEEF0;
+  --gray: #222326;
+  --border: .5px solid #EDEEF0;
+}
+
+/* FONT WEIGHTS 100-700 */
+body,
+#root {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  font-family: roc-grotesk, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+a {
+  color: var(--fg);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav,
+footer {
+  flex-shrink: 0;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 10rem;
+}
+
+.nav {
+  width: 100%;
+  padding: 2rem 2rem;
+}
+
+.nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.nav-item-content {
+  font-size: 2rem;
+}
+
+.nav-title {
+  font-weight: 600;
+}
+
+.content-text {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 6rem;
+  text-align: justify;
+}
+
+.content-text::selection,
+a::selection,
+.nav-item-content::selection {
+  color: var(--bg);
+  background: var(--fg);
+}
+
+footer {
+  width: 50%;
+  padding: 2rem;
+  margin: auto;
+  font-size: 2rem;
+}
+
+.portfolio-container {
+  width: 50%;
+}
+
+.project {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: .25s ease;
+}
+
+.project:hover {
+  background: var(--gray);
+  transform: scale(1.01);
+}
+
+.title-and-desc {
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+  white-space: nowrap;
+}
+
+.project-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.project-desc {
+  font-weight: 300;
+  color: gray;
+  font-size: 1.25rem;
+}
+
+.project-divider {
+  width: 100%;
+  border: .5px solid rgb(204, 204, 204);
+}
+
+.languages {
+  font-size: 1.5rem;
+  display: flex;
+  gap: .5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  font-weight: 400;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.portfolio-link-to-blog {
+  padding: 1rem;
+  font-size: 1.25rem;
+  text-decoration: underline;
+  margin-top: 1rem;
+}
+
+.underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 16px;
+  left: 0;
+  background-color: var(--fg);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease;
+}
+
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

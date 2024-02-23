@@ -189,3 +189,28 @@ a {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+@media (max-width: 1000px) {
+  .content-text {
+    font-size: 3rem;
+    line-height: 5rem;
+    text-align: left;
+  }
+
+  main {
+    padding: 2rem 4rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .content-text {
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: left;
+  }
+
+  main {
+    padding: 2rem 4rem;
+  }
+}

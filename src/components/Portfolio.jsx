@@ -33,11 +33,14 @@ const Portfolio = () => {
                     </div>
                 </a>
             )}
-            {<div className="portfolio-link-to-blog">
-                <a target="_blank" href="">Sometimes I write about the process of building these things.</a>
-            </div>}
         </div >
     )
 }
 
 export default Portfolio
+
+/*
+<div className = "portfolio-link-to-blog">
+    <a target="_blank" href="">Sometimes I write about the process of building these things.</a>
+</div>
+*/

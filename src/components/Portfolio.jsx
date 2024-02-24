@@ -16,7 +16,7 @@ const Portfolio = () => {
     }
 
     return (
-        <div className="portfolio-container">
+        <div className="container">
             {portfolio.map(project =>
                 <a key={project.title} className='project' target='_blank' href={project.link}>
                     <div className="title-and-desc">
@@ -33,11 +33,9 @@ const Portfolio = () => {
                     </div>
                 </a>
             )}
-            {/*<div className="portfolio-link-to-blog">
-                <Link to={'/blog'}>
-                    Sometimes I write about the process of building these things.
-                </Link>
-                        </div>*/}
+            {<div className="portfolio-link-to-blog">
+                <a target="_blank" href="">Sometimes I write about the process of building these things.</a>
+            </div>}
         </div >
     )
 }

@@ -99,7 +99,7 @@ footer {
   font-size: 2rem;
 }
 
-.portfolio-container {
+.container {
   width: 50%;
 }
 
@@ -200,6 +200,11 @@ a {
   main {
     padding: 2rem 4rem;
   }
+
+  .footer {
+    width: 90%;
+  }
+
 }
 
 
@@ -213,4 +218,5 @@ a {
   main {
     padding: 2rem 4rem;
   }
+
 }

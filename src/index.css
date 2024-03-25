@@ -190,6 +190,13 @@ a {
   transform-origin: bottom left;
 }
 
+.technologies {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: gray;
+  margin-left: 1rem;
+}
+
 @media (max-width: 1000px) {
   .content-text {
     font-size: 3rem;

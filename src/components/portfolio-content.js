@@ -1,5 +1,11 @@
 export const portfolio = [
     {
+        title: "Mapper",
+        desc: "Remember the places that matter",
+        link: "https://mapper-ki3d.onrender.com/",
+        languages: ['react', 'typescript', 'node', 'tailwind', 'mongo']
+    },
+    {
         title: "Float Note",
         desc: "Your online bulletin board",
         link: "https://float-note.onrender.com/",
@@ -8,7 +14,7 @@ export const portfolio = [
     {
         title: "Wordle Replica",
         desc: "Play as many times as you want",
-        link: "https://wordle-aagw.onrender.com/",
+        link: "https://wordle-j012.onrender.com/",
         languages: ['react', 'node', 'framer']
     },
     {

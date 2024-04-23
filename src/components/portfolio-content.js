@@ -7,7 +7,7 @@ export const portfolio = [
         gh_link: 'https://github.com/thomasflensted/next-mapper'
     },
     {
-        title: "Float Note",
+        title: "ProjecTiles",
         desc: "Your online bulletin board",
         link: "https://www.projectiles.app/",
         languages: ['React', 'MongoDB', 'Nodejs'],

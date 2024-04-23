@@ -9,9 +9,9 @@ export const portfolio = [
     {
         title: "Float Note",
         desc: "Your online bulletin board",
-        link: "https://float-note.onrender.com/",
+        link: "https://www.projectiles.app/",
         languages: ['React', 'MongoDB', 'Nodejs'],
-        gh_link: 'https://github.com/thomasflensted/floaty-note'
+        gh_link: 'https://github.com/thomasflensted/projectiles'
     },
     {
         title: "Wordle Replica",

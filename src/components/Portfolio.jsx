@@ -1,6 +1,6 @@
 import { portfolio } from "./portfolio-content"
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiMongodb, SiExpress, SiFramer, SiTypescript, SiTailwindcss } from "react-icons/si";
+import { SiMongodb, SiExpress, SiFramer, SiTypescript, SiTailwindcss, SiNextdotjs, SiPostgresql, SiGithub } from "react-icons/si";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { useState } from "react";
 
@@ -10,30 +10,38 @@ const Portfolio = () => {
     const [technologies, setTechnologies] = useState('');
 
     const createTechnologyString = (languageArr) => {
-        const capArr = languageArr.map(tech => tech.charAt(0).toUpperCase() + tech.substring(1));
+        const capArr = languageArr.map(tech => {
+            return tech.split('_').length > 1 ? tech.split('_').join(' ') : tech
+        });
         const str = capArr.join(', ');
         setTechnologies(str);
     }
 
     const languages = {
-        javascript: <IoLogoJavascript />,
-        mongo: <SiMongodb />,
-        react: <FaReact />,
-        node: <FaNodeJs />,
-        express: <SiExpress />,
-        framer: <SiFramer />,
-        typescript: <SiTypescript />,
-        tailwind: <SiTailwindcss />
+        JavaScript: <IoLogoJavascript />,
+        MongoDB: <SiMongodb />,
+        React: <FaReact />,
+        Nodejs: <FaNodeJs />,
+        Express: <SiExpress />,
+        Framer_Motion: <SiFramer />,
+        TypeScript: <SiTypescript />,
+        TailwindCSS: <SiTailwindcss />,
+        NextJs: <SiNextdotjs />,
+        PostgreSQL: <SiPostgresql />
     }
 
     return (
         <div className="container">
             {portfolio.map(project =>
-                <a onMouseOver={() => createTechnologyString(project.languages)} key={project.title} onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)} className='project' target='_blank' href={project.link}>
-                    <div className="title-and-desc">
+                <div onMouseOver={() => createTechnologyString(project.languages)} key={project.title} onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)} className='project items-center'>
+                    {project.gh_link &&
+                        <a className="border" target='_blank' href={project.gh_link}>
+                            <SiGithub className="text-2xl" />
+                        </a>}
+                    <a className="title-and-desc" target='_blank' href={project.link}>
                         <h2 className="project-title">{project.title}</h2>
                         <p className="project-desc">{project.desc}</p>
-                    </div>
+                    </a>
                     <div className="project-divider"></div>
                     <div className="languages">
                         {project.languages.map(language =>
@@ -42,7 +50,7 @@ const Portfolio = () => {
                             </div>
                         )}
                     </div>
-                </a>
+                </div>
             )}
             {isHovering &&
                 <p className="technologies">{technologies}</p>}

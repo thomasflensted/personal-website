@@ -3,6 +3,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiMongodb, SiExpress, SiFramer, SiTypescript, SiTailwindcss, SiNextdotjs, SiPostgresql, SiGithub } from "react-icons/si";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { useState } from "react";
+import { isBrowser } from "react-device-detect";
 
 const Portfolio = () => {
 
@@ -30,8 +31,8 @@ const Portfolio = () => {
         PostgreSQL: <SiPostgresql />
     }
 
-    return (
-        <div className="container">
+    return (isBrowser
+        ? <div className="container">
             {portfolio.map(project =>
                 <div onMouseOver={() => createTechnologyString(project.languages)} key={project.title} onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)} className='items-center project'>
                     {project.gh_link &&
@@ -54,14 +55,31 @@ const Portfolio = () => {
             )}
             {isHovering &&
                 <p className="technologies">{technologies}</p>}
-        </div >
+        </div>
+        : <div className="w-11/12">
+            {portfolio.map(project =>
+                <div onMouseOver={() => createTechnologyString(project.languages)} key={project.title} onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)} className='items-center project'>
+                    {project.gh_link &&
+                        <a className="" target='_blank' href={project.gh_link}>
+                            <SiGithub className="text-2xl" />
+                        </a>}
+                    <a className="title-and-desc" target='_blank' href={project.link}>
+                        <h2 className="project-title">{project.title}</h2>
+                    </a>
+                    <div className="w-full project-divider"></div>
+                    <div className="languages">
+                        {project.languages.map(language =>
+                            <div className="language" key={language}>
+                                {languages[language]}
+                            </div>
+                        )}
+                    </div>
+                </div>
+            )}
+            {isHovering &&
+                <p className="technologies">{technologies}</p>}
+        </div>
     )
 }
 
 export default Portfolio
-
-/*
-<div className = "portfolio-link-to-blog">
-    <a target="_blank" href="">Sometimes I write about the process of building these things.</a>
-</div>
-*/

@@ -33,9 +33,9 @@ const Portfolio = () => {
     return (
         <div className="container">
             {portfolio.map(project =>
-                <div onMouseOver={() => createTechnologyString(project.languages)} key={project.title} onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)} className='project items-center'>
+                <div onMouseOver={() => createTechnologyString(project.languages)} key={project.title} onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)} className='items-center project'>
                     {project.gh_link &&
-                        <a className="border" target='_blank' href={project.gh_link}>
+                        <a className="" target='_blank' href={project.gh_link}>
                             <SiGithub className="text-2xl" />
                         </a>}
                     <a className="title-and-desc" target='_blank' href={project.link}>

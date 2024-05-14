@@ -3,7 +3,7 @@ export const portfolio = [
         title: "Next Twitter",
         desc: "Twitter clone, but with AI - work in progress",
         link: "https://next-twitter-indol.vercel.app/",
-        languages: ['NextJs', 'TypeScript', 'OpenAI', 'PostgreSQL', 'TailwindCSS'],
+        languages: ['NextJs', 'TypeScript', 'PostgreSQL', 'OpenAI', 'AWS', 'TailwindCSS'],
         gh_link: 'https://github.com/thomasflensted/next-twitter'
     },
     {

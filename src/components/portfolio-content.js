@@ -1,5 +1,12 @@
 export const portfolio = [
     {
+        title: "Next Twitter",
+        desc: "Twitter clone, but with AI - work in progress",
+        link: "https://next-twitter-indol.vercel.app/",
+        languages: ['NextJs', 'TypeScript', 'OpenAI', 'PostgreSQL', 'TailwindCSS'],
+        gh_link: 'https://github.com/thomasflensted/next-twitter'
+    },
+    {
         title: "Mapper",
         desc: "Remember the places that matter",
         link: "https://next-mapper.vercel.app/",

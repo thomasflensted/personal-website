@@ -1,6 +1,6 @@
 import { portfolio } from "./portfolio-content"
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiMongodb, SiExpress, SiFramer, SiTypescript, SiTailwindcss, SiNextdotjs, SiPostgresql, SiGithub } from "react-icons/si";
+import { SiMongodb, SiExpress, SiFramer, SiTypescript, SiTailwindcss, SiOpenai, SiNextdotjs, SiPostgresql, SiGithub } from "react-icons/si";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { useState } from "react";
 import { isBrowser } from "react-device-detect";
@@ -28,7 +28,8 @@ const Portfolio = () => {
         TypeScript: <SiTypescript />,
         TailwindCSS: <SiTailwindcss />,
         NextJs: <SiNextdotjs />,
-        PostgreSQL: <SiPostgresql />
+        PostgreSQL: <SiPostgresql />,
+        OpenAI: <SiOpenai />
     }
 
     return (isBrowser

@@ -4,6 +4,9 @@ import { SiMongodb, SiExpress, SiFramer, SiTypescript, SiTailwindcss, SiOpenai, 
 import { FaReact, FaNodeJs, FaAws } from "react-icons/fa";
 import { useState } from "react";
 import { isBrowser } from "react-device-detect";
+import GitHubLink from "./GitHubLink";
+import TitleAndDesc from "./TitleAndDesc";
+import Languages from "./Languages";
 
 const Portfolio = () => {
 
@@ -18,41 +21,16 @@ const Portfolio = () => {
         setTechnologies(str);
     }
 
-    const languages = {
-        JavaScript: <IoLogoJavascript />,
-        MongoDB: <SiMongodb />,
-        React: <FaReact />,
-        Nodejs: <FaNodeJs />,
-        Express: <SiExpress />,
-        Framer_Motion: <SiFramer />,
-        TypeScript: <SiTypescript />,
-        TailwindCSS: <SiTailwindcss />,
-        NextJs: <SiNextdotjs />,
-        PostgreSQL: <SiPostgresql />,
-        OpenAI: <SiOpenai />,
-        AWS: <FaAws />
-    }
-
     return (isBrowser
-        ? <div className="container">
+        ? <div className="flex flex-col w-1/2 gap-2">
             {portfolio.map(project =>
-                <div onMouseOver={() => createTechnologyString(project.languages)} key={project.title} onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)} className='items-center project'>
-                    {project.gh_link &&
-                        <a className="" target='_blank' href={project.gh_link}>
-                            <SiGithub className="text-2xl" />
-                        </a>}
-                    <a className="title-and-desc" target='_blank' href={project.link}>
-                        <h2 className="project-title">{project.title}</h2>
-                        <p className="project-desc">{project.desc}</p>
+                <div onMouseOver={() => createTechnologyString(project.languages)} key={project.title} onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)} className='flex items-center w-full gap-2 px-4 py-4 transition-all duration-200 ease-in-out rounded-lg justify-evenly hover:bg-gray-200 hover:scale-[1.01]'>
+                    {project.gh_link && <GitHubLink link={project.gh_link} />}
+                    <a className="flex gap-1 whitespace-nowrap" target='_blank' href={project.link}>
+                        <TitleAndDesc title={project.title} desc={project.desc} />
                     </a>
                     <div className="project-divider"></div>
-                    <div className="languages">
-                        {project.languages.map(language =>
-                            <div className="language" key={language}>
-                                {languages[language]}
-                            </div>
-                        )}
-                    </div>
+                    <Languages languages={project.languages} />
                 </div>
             )}
             {isHovering &&
@@ -85,3 +63,4 @@ const Portfolio = () => {
 }
 
 export default Portfolio
+// title-and-desc

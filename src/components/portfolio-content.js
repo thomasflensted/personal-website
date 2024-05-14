@@ -14,6 +14,13 @@ export const portfolio = [
         gh_link: 'https://github.com/thomasflensted/next-mapper'
     },
     {
+        title: "Random Hacker News Stories",
+        desc: "Playing around with the Hacker News API",
+        link: "https://random-hackernews-stories.vercel.app/",
+        languages: ['NextJs', 'TypeScript', 'Framer_Motion', 'TailwindCSS'],
+        gh_link: 'https://github.com/thomasflensted/random-hackernews-stories'
+    },
+    {
         title: "ProjecTiles",
         desc: "Your online bulletin board",
         link: "https://www.projectiles.app/",

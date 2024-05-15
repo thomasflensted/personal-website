@@ -47,4 +47,10 @@ export const portfolio = [
         link: "https://thomasflensted.gumroad.com/",
         languages: ['JavaScript'],
     },
+    {
+        title: "annearndt.dk",
+        shortDesc: "Personal website for my girlfriend who's a journalist",
+        link: "https://annearndt.dk/",
+        languages: ['React'],
+    },
 ]

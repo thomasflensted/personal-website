@@ -11,6 +11,7 @@ type PortfolioItem = {
     languages: string[],
     githubLink: string,
     fullDesc: string
+    year: number
 }
 
 type Props = {
@@ -43,7 +44,7 @@ const PortfolioItem = ({ project, setIsHovering, setTechnologies, setDescription
             {project.githubLink
                 && <GitHubLink link={project.githubLink} />}
             <a title={project.link} className="flex items-center w-full justify-evenly" href={project.link} target="_blank">
-                <TitleAndDesc title={project.title} desc={project.shortDesc} />
+                <TitleAndDesc title={project.title} desc={project.shortDesc} year={project.year} />
                 <hr className="flex-grow mx-5 border-gray-300" />
                 <Languages languages={project.languages} />
             </a>

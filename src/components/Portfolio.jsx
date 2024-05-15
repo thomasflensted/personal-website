@@ -10,7 +10,7 @@ const Portfolio = () => {
     const [description, setDescription] = useState('')
 
     return (
-        <div className="flex flex-col w-11/12 gap-2 md:w-3/4 lg:w-3/4 ">
+        <div className="flex flex-col w-full gap-2 md:w-3/4 lg:w-3/4">
             {portfolio.map(project =>
                 <PortfolioItem
                     key={project.shortDesc}

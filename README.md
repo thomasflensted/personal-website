@@ -1,2 +1,2 @@
 ### My Personal Website
-React and plain CSS.
+Plain React - started styling with traditional CSS, later implemented Tailwind, hence why you see a mix of old school classnames and tailwind classnames.

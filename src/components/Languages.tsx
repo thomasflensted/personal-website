@@ -1,7 +1,8 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { FaAws, FaNodeJs, FaReact } from "react-icons/fa"
 import { IoLogoJavascript } from "react-icons/io5"
 import { SiExpress, SiFramer, SiMongodb, SiNextdotjs, SiOpenai, SiPostgresql, SiTailwindcss, SiTypescript } from "react-icons/si"
+Fragment
 
 const Languages = ({ languages }: { languages: string[] }) => {
 
@@ -21,12 +22,11 @@ const Languages = ({ languages }: { languages: string[] }) => {
     }
 
     return (
-        <div className="languages">
+        <div className="flex items-center gap-2 text-2xl">
             {languages.map(language =>
-                <div className="language" key={language}>
+                <Fragment key={language} >
                     {languageIcons[language]}
-                </div>
-            )}
+                </Fragment>)}
         </div>
     )
 }

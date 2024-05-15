@@ -35,6 +35,13 @@ export const portfolio = [
         githubLink: 'https://github.com/thomasflensted/wordle'
     },
     {
+        title: "annearndt.dk",
+        shortDesc: "Personal website for my girlfriend who's a journalist",
+        link: "https://annearndt.dk/",
+        languages: ['React', "TypeScript", "TailwindCSS"],
+        githubLink: 'https://github.com/thomasflensted/anne-website'
+    },
+    {
         title: "My Todo Now",
         shortDesc: "All your lists organized with no frills",
         link: "https://mytodonow.com/",
@@ -46,11 +53,5 @@ export const portfolio = [
         shortDesc: "Speed up your motion graphics workflow",
         link: "https://thomasflensted.gumroad.com/",
         languages: ['JavaScript'],
-    },
-    {
-        title: "annearndt.dk",
-        shortDesc: "Personal website for my girlfriend who's a journalist",
-        link: "https://annearndt.dk/",
-        languages: ['React'],
     },
 ]

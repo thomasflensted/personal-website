@@ -2,7 +2,7 @@ export const portfolio = [
     {
         title: "X++",
         shortDesc: "Twitter/X clone, but with AI - work in progress",
-        link: "https://next-twitter-indol.vercel.app/home",
+        link: "https://next-twitter-indol.vercel.app/",
         languages: ['NextJs', 'TypeScript', 'PostgreSQL', 'OpenAI', 'AWS', 'TailwindCSS'],
         githubLink: 'https://github.com/thomasflensted/next-twitter',
         year: 2024

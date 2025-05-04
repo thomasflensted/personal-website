@@ -15,8 +15,8 @@ function App() {
         </header>
         <main>
           <Routes>
-            <Route path="/" element={<Main />}></Route>
-            <Route path="/portfolio" element={<Portfolio />}></Route>
+            <Route path="/about" element={<Main />}></Route>
+            <Route path="/" element={<Portfolio />}></Route>
           </Routes>
         </main>
         <Footer />

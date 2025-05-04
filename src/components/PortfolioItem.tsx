@@ -4,16 +4,6 @@ import TitleAndDesc from "./TitleAndDesc";
 import Languages from "./Languages";
 import { Project } from "./portfolio-content";
 
-// type PortfolioItem = {
-//   title: string;
-//   shortDesc: string;
-//   link: string;
-//   languages: string[];
-//   githubLink: string;
-//   fullDesc: string;
-//   year: number;
-// };
-
 type Props = {
   project: Project;
   setIsHovering: Dispatch<SetStateAction<boolean>>;

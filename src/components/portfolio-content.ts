@@ -1,8 +1,21 @@
+export type Technology =
+  | "JavaScript"
+  | "TypeScript"
+  | "React"
+  | "NextJs"
+  | "NodeJs"
+  | "PostgreSQL"
+  | "MongoDB"
+  | "TailwindCSS"
+  | "Framer_Motion"
+  | "OpenAI"
+  | "AWS";
+
 export type Project = {
   title: string;
   shortDesc: string;
   link: string;
-  languages: string[];
+  languages: Technology[];
   githubLink?: string;
   year: number;
 };
@@ -43,7 +56,7 @@ export const portfolio: Project[] = [
     title: "ProjecTiles",
     shortDesc: "Your online bulletin board",
     link: "https://www.projectiles.app/",
-    languages: ["React", "MongoDB", "Nodejs"],
+    languages: ["React", "MongoDB", "NodeJs"],
     githubLink: "https://github.com/thomasflensted/projectiles",
     year: 2024,
   },
@@ -51,7 +64,7 @@ export const portfolio: Project[] = [
     title: "Infinite Wordle",
     shortDesc: "Play Wordle as many times as you want",
     link: "https://wordle-j012.onrender.com/",
-    languages: ["React", "Nodejs", "Framer_Motion"],
+    languages: ["React", "NodeJs", "Framer_Motion"],
     githubLink: "https://github.com/thomasflensted/wordle",
     year: 2024,
   },

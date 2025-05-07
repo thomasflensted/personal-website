@@ -79,7 +79,7 @@ export const portfolio: Project[] = [
   {
     title: "My Todo Now",
     shortDesc: "All your lists organized with no frills",
-    link: "https://mytodonow.com/",
+    link: "https://todo-app-pydr.onrender.com",
     languages: ["React"],
     githubLink: "https://github.com/thomasflensted/todo-app",
     year: 2024,

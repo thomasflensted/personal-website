@@ -13,17 +13,17 @@ html {
 }
 
 .light {
-  --bg: #EDEEF0;
-  --fg: #18191B;
-  --border: .5px solid #18191B;
+  --bg: #edeef0;
+  --fg: #18191b;
+  --border: 0.5px solid #18191b;
   --gray: #e5e5e5;
 }
 
 .dark {
-  --bg: #18191B;
-  --fg: #EDEEF0;
+  --bg: #18191b;
+  --fg: #edeef0;
   --gray: #222326;
-  --border: .5px solid #EDEEF0;
+  --border: 0.5px solid #edeef0;
 }
 
 /* FONT WEIGHTS 100-700 */
@@ -115,7 +115,7 @@ footer {
   width: 100%;
   border-radius: 10px;
   padding: 1rem;
-  transition: .25s ease;
+  transition: 0.25s ease;
 }
 
 .project:hover {
@@ -126,7 +126,7 @@ footer {
 .title-and-desc {
   align-items: center;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   white-space: nowrap;
 }
 
@@ -143,13 +143,13 @@ footer {
 
 .project-divider {
   width: 100%;
-  border: .5px solid rgb(204, 204, 204);
+  border: 0.5px solid rgb(204, 204, 204);
 }
 
 .languages {
   font-size: 1.5rem;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 a {
@@ -177,7 +177,7 @@ a {
 }
 
 .underline-animation::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -215,9 +215,7 @@ a {
   .footer {
     width: 90%;
   }
-
 }
-
 
 @media (max-width: 600px) {
   .content-text {
@@ -229,5 +227,4 @@ a {
   main {
     padding: 2rem 2rem;
   }
-
 }

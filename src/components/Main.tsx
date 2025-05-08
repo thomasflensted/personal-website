@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Main = () => {
   const [image, setImage] = useState<null | string>(null);
   const [imagePosition, setImagePosition] = useState({ x: 0, y: 0 });
-  const height = 260;
+  const height = 275;
 
   return (
     <div className="flex items-center relative">

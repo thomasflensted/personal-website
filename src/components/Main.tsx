@@ -1,4 +1,4 @@
-import React, { useState, MouseEvent } from "react";
+import React, { useState } from "react";
 import me from "../assets/thomas.webp";
 import landcruiser from "../assets/landcruiser.webp";
 import august from "../assets/august.webp";
@@ -6,6 +6,7 @@ import bike from "../assets/cykel.webp";
 import { AnimatePresence, motion } from "framer-motion";
 import ImageHover from "./ImageHover";
 import { Link } from "react-router-dom";
+import AnimatedLink from "./AnimatedLink";
 
 const Main = () => {
   const [image, setImage] = useState<null | string>(null);
@@ -75,6 +76,7 @@ const Main = () => {
         </span>
         &nbsp;If you want to work with me or just say hi 👋, get in touch on one
         of the links below.
+        <AnimatedLink url="www.google.com" text="Google" />
       </p>
       <AnimatePresence>
         {image && (

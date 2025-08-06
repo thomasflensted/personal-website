@@ -55,7 +55,7 @@ export const portfolio: Project[] = [
   {
     title: "ProjecTiles",
     shortDesc: "Your online bulletin board",
-    link: "https://www.projectiles.app/",
+    link: "https://float-note.onrender.com/",
     languages: ["React", "MongoDB", "NodeJs"],
     githubLink: "https://github.com/thomasflensted/projectiles",
     year: 2024,

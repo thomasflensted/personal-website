@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaGithub, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaGithub } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
 const Footer = () => {
@@ -22,15 +22,6 @@ const Footer = () => {
             href="https://www.instagram.com/toughlens/"
           >
             <FaInstagram />
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            className="nav-link"
-            target="_blank"
-            href="https://www.youtube.com/ripening"
-          >
-            <FaYoutube />
           </a>
         </li>
         <li className="nav-item">

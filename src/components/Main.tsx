@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import me from "../assets/thomas.webp";
 import landcruiser from "../assets/landcruiser.webp";
-import august from "../assets/august.webp";
 import bike from "../assets/cykel.webp";
 import { AnimatePresence, motion } from "framer-motion";
 import ImageHover from "./ImageHover";
-import { Link } from "react-router-dom";
-import AnimatedLink from "./AnimatedLink";
 
 const Main = () => {
   const [image, setImage] = useState<null | string>(null);
@@ -16,7 +13,7 @@ const Main = () => {
   return (
     <div className="flex items-center relative">
       <p className="content-text">
-        My name is&nbsp;
+        My name is{" "}
         <ImageHover
           height={height}
           image={me}
@@ -24,59 +21,35 @@ const Main = () => {
           setImagePos={setImagePosition}
           text="Thomas"
         />
-        . I am a full-stack engineer.&nbsp;
-        <Link to="/" className="link underline-animation">
-          These
-        </Link>
-        &nbsp; are some of the projects I've built. I love thinking about and
-        writing code - and I'm always working on at least one side project when
-        I'm not at my day job. In 2023, my girlfriend and I spent most of the
-        year driving a&nbsp;
+        . I'm a software engineer. These days I don't write much of the code
+        myself - I design the system, direct AI agents to build it, and ship the
+        reviewed result. Mostly TypeScript and Go with Postgres behind it, but
+        whatever ships the right thing. I once spent the better part of a year
+        driving a{" "}
         <ImageHover
           height={height}
           image={landcruiser}
           setImage={setImage}
           setImagePos={setImagePosition}
-          text="Land Cruiser"
-        />
-        &nbsp;from&nbsp;
+          text={"Land\u00a0Cruiser"}
+        />{" "}
+        from{" "}
         <a
-          className="link underline-animation"
+          className="link"
           target="_blank"
           href="https://instagram.com/toughlens"
         >
           Denmark to Mongolia
-        </a>
-        &nbsp;and back. Sometimes, I post longer&nbsp;
-        <a
-          className="link underline-animation"
-          target="_blank"
-          href="https://thomasflensted.exposure.co/"
-        >
-          photo series
-        </a>
-        &nbsp;from my travels.
-        <span className="hidden md:inline">
-          &nbsp;When I'm not writing code, I am usually out&nbsp;
-          <ImageHover
-            height={height}
-            image={bike}
-            setImage={setImage}
-            setImagePos={setImagePosition}
-            text="riding"
-          />
-          &nbsp;or taking care of&nbsp;
-          <ImageHover
-            height={height}
-            image={august}
-            setImage={setImage}
-            setImagePos={setImagePosition}
-            text="this guy."
-          />
-        </span>
-        &nbsp;If you want to work with me or just say hi 👋, get in touch on one
-        of the links below.
-        <AnimatedLink url="www.google.com" text="Google" />
+        </a>{" "}
+        and back. When I can carve out a few hours, I'm usually out{" "}
+        <ImageHover
+          height={height}
+          image={bike}
+          setImage={setImage}
+          setImagePos={setImagePosition}
+          text="riding"
+        />
+        .
       </p>
       <AnimatePresence>
         {image && (

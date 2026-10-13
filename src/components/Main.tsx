@@ -20,12 +20,10 @@ const Main = () => {
           setImage={setImage}
           setImagePos={setImagePosition}
           text="Thomas"
-        />
-        . I'm a software engineer. These days I don't write much of the code
-        myself - I design the system, direct AI agents to build it, and ship the
-        reviewed result. Mostly TypeScript and Go with Postgres behind it, but
-        whatever ships the right thing. I once spent the better part of a year
-        driving a{" "}
+        />{" "}
+        and I'm a software engineer. I live in Copenhagen. These days AI agents
+        write all of my code, and my job is deciding what gets built and how it
+        gets done. I once spent the better part of a year driving a{" "}
         <ImageHover
           height={height}
           image={landcruiser}
@@ -41,7 +39,7 @@ const Main = () => {
         >
           Denmark to Mongolia
         </a>{" "}
-        and back. When I can carve out a few hours, I'm usually out{" "}
+        and back. When I have a free morning or afternoon, I'm usually out{" "}
         <ImageHover
           height={height}
           image={bike}

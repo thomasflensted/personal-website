@@ -6,7 +6,7 @@ I'm a full-stack engineer and live in Copenhagen. Before switching to software, 
 
 ## Experience
 
-### Full-stack engineer at [Flokk](https://joinflokk.com) _Oct 2025 – present_
+### Founder and full-stack engineer at [Flokk](https://joinflokk.com) _Oct 2025 – present_
 
 Flokk is where cycling and running clubs post group rides and runs, and where people find and join them. It has 2,500 users and grows every day. I build and run all of it alone, from the iOS and Android app in React Native and the web app on TanStack Start to the Go API with Postgres behind it.
 

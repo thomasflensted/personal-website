@@ -2,7 +2,7 @@
 
 ## Profile
 
-I'm a full-stack engineer in Copenhagen. I worked in filmmaking and motion graphics until 2022, then switched to software.
+I'm a full-stack engineer and live in Copenhagen. Before switching to software, I worked in filmmaking and motion graphics for some years.
 
 ## Experience
 
@@ -10,19 +10,19 @@ I'm a full-stack engineer in Copenhagen. I worked in filmmaking and motion graph
 
 Flokk is where cycling and running clubs post group rides and runs, and where people find and join them. It has 2,500 users and grows every day. I build and run all of it alone, from the iOS and Android app in React Native and the web app on TanStack Start to the Go API with Postgres behind it.
 
-- Made every change in the app show instantly, with optimistic updates that roll back if the request fails, and replaced the generic "Something went wrong" screen with errors that say what happened and only offer a retry when one can help.
-- Designed and built co-hosting, letting a club invite another club or a rider through a single-use link that expires after 48 hours, without a directory of clubs to search.
-- Moved event forms and actions from the apps to the API, so changing a rule, including the ones specific to each activity, ships with a server deploy instead of waiting for App Store review.
-- Automated delivery end to end: CI on every pull request, scripted store releases, and release notes an LLM writes from the changes in each build.
+- I made every change in the app show instantly, with optimistic updates that roll back if the request fails.
+- I designed and built co-hosting, letting a club invite another club or a rider through a single-use link that expires.
+- I moved event forms and actions from the apps to the API, so changing a rule ships with a server deploy.
+- I automated delivery end to end: Scripted store releases, and release notes an LLM writes from the changes.
 
 ### Full-stack engineer at [Zetland Media](https://zetland.media) _May 2024 – present_
 
-Zetland is a media company with more than 60,000 subscribers across Denmark, Finland and Norway. Its platform also powers two partner white-labelled brands, in Austria and Denmark. I am part of the small tech team responsible for our iOS and Android app (Expo, React Native), our web app (Next.js) and our API (Ruby on Rails). I started out mostly working on the web frontend, but have since moved to the full stack.
+Zetland is a media company with more than 60,000 subscribers across Denmark, Finland and Norway. Its platform also powers two white-labelled brands in Austria and Denmark. I am part of the small tech team responsible for our iOS and Android app (Expo, React Native), our web app (Next.js) and our API (Ruby on Rails). I started out mostly working on the web frontend, but have since moved to the full stack.
 
-- Led Zetland's launch in Norway across the full stack.
-- Turned the yearly referral campaign from a Zetland-only feature into one every brand on the platform can run from Sanity, across web and API.
-- Found that our audio delivery cost around $35k a year, then migrated it to Cloudflare's CDN, expected to save around $30k a year.
-- Brought the Next.js codebase to 100% TypeScript and moved most of it to the App Router and React Query, upgrading from Next 14 to 16 along the way.
+- I led Zetland's launch in Norway across the full stack.
+- I turned the yearly referral campaign from a Zetland-only feature into one every brand on the platform can run from Sanity.
+- I found that our audio delivery cost around $35k a year, then migrated it to Cloudflare's CDN, expected to save around $30k a year.
+- I brought the Next.js codebase to 100% TypeScript and moved most of it to the App Router and React Query.
 
 ### Career break _2023_
 

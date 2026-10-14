@@ -107,17 +107,16 @@ a {
 
 .cv h1 {
   font-size: 2.8rem;
-  font-weight: 400;
-  margin-bottom: 4.8rem;
+  font-weight: 500;
+  margin-bottom: 6.4rem;
 }
 
 .cv h2 {
-  font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 2.8rem;
-  opacity: 0.6;
-  margin-top: 6.4rem;
-  margin-bottom: 1.6rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  margin-top: 9.6rem;
+  margin-bottom: 2.4rem;
 }
 
 .cv h1 + h2 {
@@ -209,14 +208,16 @@ a {
 
   .cv h1 {
     font-size: 2.4rem;
-    margin-bottom: 3.2rem;
+    margin-bottom: 4.8rem;
   }
 
   .cv h2 {
-    margin-top: 4.8rem;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    margin-top: 7.2rem;
+    margin-bottom: 1.6rem;
   }
 
-  .cv h2,
   .cv h3,
   .cv li {
     font-size: 1.6rem;

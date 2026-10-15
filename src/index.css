@@ -106,28 +106,33 @@ a {
 }
 
 .cv h1 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: 500;
-  margin-bottom: 6.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.cv h1 + p {
+  text-align: left;
+  hyphens: none;
+}
+
+.cv h1 + p + h2 {
+  margin-top: 3.2rem;
 }
 
 .cv h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 500;
-  line-height: 3.2rem;
-  margin-top: 9.6rem;
-  margin-bottom: 2.4rem;
-}
-
-.cv h1 + h2 {
-  margin-top: 0;
+  line-height: 2.8rem;
+  margin-top: 4rem;
+  margin-bottom: 0.4rem;
 }
 
 .cv h3 {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 2.8rem;
-  margin-top: 3.2rem;
+  margin-top: 2.4rem;
 }
 
 .cv h3 em {
@@ -207,15 +212,14 @@ a {
   }
 
   .cv h1 {
-    font-size: 2.4rem;
-    margin-bottom: 4.8rem;
+    font-size: 2.1rem;
   }
 
   .cv h2 {
-    font-size: 1.9rem;
-    line-height: 2.8rem;
-    margin-top: 7.2rem;
-    margin-bottom: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    margin-top: 3.2rem;
+    margin-bottom: 0.4rem;
   }
 
   .cv h3,
@@ -224,6 +228,14 @@ a {
     line-height: 2.4rem;
   }
 
+  .cv p,
+  .cv p + ul li {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
+
+@media print {
   .cv p,
   .cv p + ul li {
     font-size: 1.4rem;

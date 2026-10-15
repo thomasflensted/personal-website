@@ -1,5 +1,7 @@
 # Thomas Flensted-Jensen
 
+[Email](mailto:thomasflenstedjensen@gmail.com) · [+45 22 44 20 67](tel:+4522442067) · [GitHub](https://github.com/thomasflensted) · Copenhagen, Denmark
+
 ## Profile
 
 I'm a full-stack engineer and live in Copenhagen, Denmark. Before switching to software, I worked for several years in filmmaking and motion graphics.
@@ -22,29 +24,17 @@ Zetland is a media company with more than 60,000 subscribers across Denmark, Fin
 - I led Zetland's launch in Norway across the full stack.
 - I turned the yearly referral campaign from a Zetland-only feature into one every brand on the platform can run from Sanity.
 - I found that our audio delivery cost around $35k a year, then migrated it to Cloudflare's CDN, expected to save around $30k a year.
-- I brought the Next.js codebase to 100% TypeScript and moved most of it to the App Router and React Query.
 
 ### Career break _2023_
 
-My girlfriend and I went on the adventure of our lifetime as we drove a Toyota Land Cruiser from Denmark to Mongolia and back again. It took us through Eastern Europe, the Balkans, Turkey, Caucasus, Central Asia, Mongolia and countless Russian oblasts and republics. We also spent a month in South Korea and Japan.
+My girlfriend and I went on an adventure as we drove a Toyota Land Cruiser from Denmark to Mongolia and back again, through the Balkans, Turkey, the Caucasus, Central Asia and countless Russian oblasts and republics.
 
 ### Visual storyteller at [Friday](https://fday.dk) _Mar 2020 – Dec 2022_
 
-Motion graphics and design, filmmaking, concepts, photography. Also a bit of computer programming once in a while.
+Motion graphics and design, filmmaking, concepts and photography.
 
 ## Education
 
 ### Copenhagen Business School _2014 – 2017_
 
-Incomplete business and language studies. After three years, I realized this was not for me, so I dropped out and started working instead.
-
-### Ingrid Jespersens Gymnasieskole _2010 – 2013_
-
-Upper secondary school (STX)
-
-## Contact
-
-- [thomasflenstedjensen@gmail.com](mailto:thomasflenstedjensen@gmail.com)
-- [+45 22 44 20 67](tel:+4522442067)
-- Copenhagen, Denmark
-- [GitHub](https://github.com/thomasflensted)
+Incomplete business and language studies. After three years, I dropped out and started working instead.

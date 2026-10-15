@@ -235,10 +235,45 @@ a {
   }
 }
 
+@page {
+  size: A4;
+  margin: 10mm 0;
+}
+
 @media print {
+  main {
+    padding: 0 18mm;
+  }
+
+  .cv {
+    max-width: none;
+    padding-top: 0;
+  }
+
+  .cv h1 + p + h2 {
+    margin-top: 2.4rem;
+  }
+
+  .cv h2 {
+    margin-top: 3.2rem;
+  }
+
+  .cv h3 {
+    margin-top: 1.6rem;
+  }
+
+  .cv h2,
+  .cv h3 {
+    break-after: avoid;
+  }
+
+  .cv li {
+    break-inside: avoid;
+  }
+
   .cv p,
   .cv p + ul li {
     font-size: 1.4rem;
-    line-height: 2.2rem;
+    line-height: 2rem;
   }
 }

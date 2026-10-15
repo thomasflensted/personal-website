@@ -2,13 +2,13 @@
 
 ## Profile
 
-I'm a full-stack engineer and live in Copenhagen. Before switching to software, I worked in filmmaking and motion graphics for some years.
+I'm a full-stack engineer and live in Copenhagen, Denmark. Before switching to software, I worked for several years in filmmaking and motion graphics.
 
 ## Experience
 
 ### Founder and full-stack engineer at [Flokk](https://joinflokk.com) _Oct 2025 – present_
 
-Flokk is where cycling and running clubs post group rides and runs, and where people find and join them. It has 2,500 users and grows every day. I build and run all of it alone, from the iOS and Android app in React Native and the web app on TanStack Start to the Go API with Postgres behind it.
+Flokk is where cycling and running clubs post group rides and runs, and where people find and join events. It has already grown to 2,500 users in Oslo, our launch city, and is growing every day. I build and run all of it alone, from the iOS and Android app in React Native and the web app on TanStack Start to the Go API with Postgres behind it.
 
 - I made every change in the app show instantly, with optimistic updates that roll back if the request fails.
 - I designed and built co-hosting, letting a club invite another club or a rider through a single-use link that expires.
@@ -26,13 +26,17 @@ Zetland is a media company with more than 60,000 subscribers across Denmark, Fin
 
 ### Career break _2023_
 
-My girlfriend and I went on the adventure of our lifetime as we drove from Denmark to Mongolia and back again. It brought us through Eastern Europe, the Balkans, Turkey, Caucasus, Central Asia, Mongolia and countless Russian oblasts, territories and republics. We also spent a month in South Korea and Japan.
+My girlfriend and I went on the adventure of our lifetime as we drove a Toyota Land Cruiser from Denmark to Mongolia and back again. It took us through Eastern Europe, the Balkans, Turkey, Caucasus, Central Asia, Mongolia and countless Russian oblasts and republics. We also spent a month in South Korea and Japan.
 
 ### Visual storyteller at [Friday](https://fday.dk) _Mar 2020 – Dec 2022_
 
 Motion graphics and design, filmmaking, concepts, photography. Also a bit of computer programming once in a while.
 
 ## Education
+
+### Copenhagen Business School _2014 – 2017_
+
+Incomplete business and language studies. After three years, I realized this was not for me, so I dropped out and started working instead.
 
 ### Ingrid Jespersens Gymnasieskole _2010 – 2013_
 

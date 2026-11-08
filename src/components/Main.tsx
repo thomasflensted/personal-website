@@ -5,13 +5,25 @@ import bike from "../assets/cykel.webp";
 import { AnimatePresence, motion } from "framer-motion";
 import ImageHover from "./ImageHover";
 
+// Fetch and decode the hover images when the component mounts, so the first
+// hover animates instead of waiting on the network. Defined at module level so
+// the ref callback is stable and only runs on mount.
+const preloadImages = (node: HTMLDivElement | null) => {
+  if (!node) return;
+  [me, landcruiser, bike].forEach((src) => {
+    const img = new Image();
+    img.src = src;
+    img.decode().catch(() => {});
+  });
+};
+
 const Main = () => {
   const [image, setImage] = useState<null | string>(null);
   const [imagePosition, setImagePosition] = useState({ x: 0, y: 0 });
   const height = 275;
 
   return (
-    <div className="flex items-center relative">
+    <div ref={preloadImages} className="flex items-center relative">
       <p className="content-text">
         My name is{" "}
         <ImageHover

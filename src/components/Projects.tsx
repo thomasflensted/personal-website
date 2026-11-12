@@ -17,7 +17,7 @@ const projects = [
   },
   {
     name: "Shelf",
-    href: "https://github.com/thomasflensted/shelf",
+    href: "https://thomasflensted.github.io/shelf/",
     meta: "macOS",
     description:
       "A plain ebook library covering the parts of Calibre I actually used. It reads covers and metadata from EPUB, MOBI and PDF files, and sends books to a Kindle over USB.",
